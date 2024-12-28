@@ -20,6 +20,8 @@ git fetch ===> To download a remote repo to our local for viewing
 git diff ===> To compare chnages between commits or branches
 git commit --amend ===> To edit a commit message
 git merge ===> To two branches
+git branch -D ===> to delete a branch that has not been merged
+git branch -d ===> To delete a branch that has already been merged.
 
 
 
