@@ -1,0 +1,4 @@
+git init ===> To initialize a repo
+git remote add "remote name" "url" ===> To link the remote repo and the locale
+
+
