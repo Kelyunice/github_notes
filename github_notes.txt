@@ -18,7 +18,7 @@ git checkout -b ===> To create new branch and switch to it
 git push -u "alias of repo" "branch name" ===> To set upstream
 git fetch ===> To download a remote repo to our local for viewing
 git diff ===> To compare chnages between commits or branches
-git commit --ammend ===> To edit a commit message
+git commit --amend ===> To edit a commit message
 git merge ===> To two branches
 
 
