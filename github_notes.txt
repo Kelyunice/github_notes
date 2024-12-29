@@ -23,6 +23,7 @@ git commit --amend                                     ===> To edit a commit mes
 git merge                                              ===> To merge two branches
 git branch -D                                          ===> to delete a branch that has not been merged
 git branch -d                                          ===> To delete a branch that has already been merged.
-
+cd "repo name", rm -rf .git                            ===> To delete the .git storage
+cd out of the repo (rm -rf "repo name")                ===> To delete the repository on CLI
 
 
