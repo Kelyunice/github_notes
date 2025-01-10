@@ -1,0 +1,45 @@
+JENKINS SETUP AND CONFIGURATION
+1- How would you design a jenkins setup for a large-scale enterprise application with multiple teams?
+    - Design a master-agent architecture where the master agent handles scheduling and orchestration jobs, and agents execute jobs.
+    - Use distributed builds by configuring jenkins agent on different machines or contaainers.
+    - Implement folder based multi-tenancy to isolate pipelines for each team.
+    - secure the jenkins setup using the role based access control (RBAC)
+    - Example: A team has access to folder A with restricted pipeline visibility, while the master node ensures no resource contention.
+2- How can you scale jenkins to handle high build loads?
+    - Use k8s based Jenkins-agents that scale dynamically based on workload.
+    - Implement build queue monitoring and optimize resource allocation by offloading non-critical jobs to low-priority nodes.
+    - Use Jenkins Operations Center (CloudBase CI) for centralized management of multiple jenkins instances.
+3- How do you manage plugins in a Jenkins environment to ensure stability?
+    - Maintain a list oof approved plugins after testing compatibility with the jenkins version.
+    - Regurlary update plugins in astaging environment before rolling them into production.
+    - Example: While upgrading the git plugin,test it with your pipeline in staging to ensure no disruption.
+4- How do you design a Jenkins Pipeline to support multiple environments(e.g Dev, QA and Prod)?
+    - Use parameterized pipelines where environment-specific configurations (e.g URLs, credentials) are are passed as parameters.
+    - Implement environment-specific stages or branch specific pipelines.
+    - Example A pipleine that promotes a build from Dev to QA and then to Prod using approval gates between stages.
+5- How can you handle dynamic branch creation in Jenkins pipelines?
+    - Using multibranch pipelines that automatically detect new branches in a repository and creates pipelines for them.
+    - Configure the Jenkinsfile in each branch to define its pipeline behavior
+6- How do you ensure pipeline resilience in case of intermitent failures?
+    - Use retry blocks in declarative or scripted pipelines to retry failed stages.
+    - Example Retrying a flaky test stage three times with exponential backoff.
+    - Implement conditional steps using CATCHERROR to handle faillures gracefully.
+
+              SECURITY AND ACCESS CONTROL
+7- How do you secure sensitive credentials in jenkins pipeline?
+    - Use the jenkins credentails plugins to store secrets securely.
+    - Access credentials using environment variables or bindings in the pipeline.
+    - Examples Fetch an API key stored in jenkins credentails using WITHCREDENTIALS in ascripted pipeline.
+8- How do you enforce Role Based Access Control (RBAC) in jenkins?
+    - Use the Role-Based authorization strategy plugin.
+    - Define roles like Admin, Developer, and Viewer , and assign permissions for jobs, folders, and builds accordingly.
+
+
+             INTERGRATION WITH TOOLS
+9- How do you intergrate jenkins with Docker for Building applications.
+    - Use the Docker plugin or Docker pipeline plugin
+    - Example : Build a docker image inthe pipeline using (docker.build ) and push to a container registry.
+    - Run test in ephemeral docker containers for consistent test environments.
+10- How do you intergrate Jenkins with a K8s cluster for deployments?
+    - Use the K8s plugin on kubectl commands in the pipeline.
+    - EXAMPLE:Use the k8s pod template with customcontainers for builds, the deploy apllications using (kubectl apply)
