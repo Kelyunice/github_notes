@@ -11,9 +11,9 @@
     - Use Jenkins Operations Center (CloudBase CI) for centralized management of multiple jenkins instances.
 3- How do you manage plugins in a Jenkins environment to ensure stability?
     - Maintain a list oof approved plugins after testing compatibility with the jenkins version.
-    - Regurlary update plugins in astaging environment before rolling them into production.
+    - Regurlary update plugins in a staging environment before rolling them into production.
     - Example: While upgrading the git plugin,test it with your pipeline in staging to ensure no disruption.
-4- How do you design a Jenkins Pipeline to support multiple environments(e.g Dev, QA and Prod)?
+4- How do you design a Jenkins Pipeline to support multiple environments (e.g Dev, QA and Prod)?
     - Use parameterized pipelines where environment-specific configurations (e.g URLs, credentials) are are passed as parameters.
     - Implement environment-specific stages or branch specific pipelines.
     - Example A pipleine that promotes a build from Dev to QA and then to Prod using approval gates between stages.
