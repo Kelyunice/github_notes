@@ -1,4 +1,4 @@
-JENKINS SETUP AND CONFIGURATION
+#JENKINS SETUP AND CONFIGURATION
 1- How would you design a jenkins setup for a large-scale enterprise application with multiple teams?
     - Design a master-agent architecture where the master agent handles scheduling and orchestration jobs, and agents execute jobs.
     - Use distributed builds by configuring jenkins agent on different machines or contaainers.
@@ -25,7 +25,7 @@ JENKINS SETUP AND CONFIGURATION
     - Example Retrying a flaky test stage three times with exponential backoff.
     - Implement conditional steps using CATCHERROR to handle faillures gracefully.
 
-              SECURITY AND ACCESS CONTROL
+             #SECURITY AND ACCESS CONTROL
 7- How do you secure sensitive credentials in jenkins pipeline?
     - Use the jenkins credentails plugins to store secrets securely.
     - Access credentials using environment variables or bindings in the pipeline.
@@ -35,7 +35,7 @@ JENKINS SETUP AND CONFIGURATION
     - Define roles like Admin, Developer, and Viewer , and assign permissions for jobs, folders, and builds accordingly.
 
 
-             INTERGRATION WITH TOOLS
+            #INTERGRATION WITH TOOLS
 9- How do you intergrate jenkins with Docker for Building applications.
     - Use the Docker plugin or Docker pipeline plugin
     - Example : Build a docker image inthe pipeline using (docker.build ) and push to a container registry.
