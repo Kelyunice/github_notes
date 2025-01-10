@@ -10,10 +10,12 @@ Maven uses xml language : App codes which is versioned in github
 
 
 Since maven is used for java projects, we need to install java first and it dependencies
- 
+        ``` 
         sudo apt install openjdk-8.jre-headless
+        ```
+        ```
         sudo apt install maven
-
+        ```
 
   Maven can be used for :
                        unit test cases
