@@ -94,4 +94,13 @@
 
 
              ADVANCED PIPELINE DESIGN
-21-
+21-  How do you trigger a jenkins pipeline from another pipeline?
+    - Use the (build) step in a scripted or declarative pipeline to trigger another pipeline
+    - Example : pipeline A biolds the application, and pipeline B deploys it. PipelineA calls Pipeline B using 
+                (build(job: 'Pipeline-B',parameters: [string(name: 'version',value: '1.0'))).
+22- How do you handle shared libraries in jenkins pipelines?
+    - Use the (Global Shared Libraries) feature in jenkins.
+    - Example: Create reusable Groovy functions for common task (e.g , linting, packaging) and call them in pipelines suing @Library('my-library').
+23- How do you implement conditional logic in jenkins pipelines?
+    - Use (which) in declarative pipeline or (if) statements inscripted pipelines.
+    - Example: Skip deployment if the branch is not (main) using (when {branch 'main'}.
