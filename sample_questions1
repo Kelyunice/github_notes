@@ -107,3 +107,33 @@
     - Example: Skip deployment if the branch is not (main) using (when){branch 'main'}.
 
             ERROR HANDLING AND RECOVERY
+24- How do you handle job failures in a Jenkins Pipeline?
+    - Use the (catchError) block to handle errors gradualy
+    - Example:
+
+              catchError{
+               sh 'some-faclling-command'
+              }
+              echo 'Handled the failure and oroceeding.'
+
+25- How would you do if a jenkins master node crashes?
+    - Restore the master node from backups.
+    - Use jenkins' thinbackup or a similar plugin for automated backups.
+    - Example: After restoration, ensure the plugin and configuration are synchronized.
+26- How do you restart a failed jenkins pipeline from a specific stage?
+    - Enable the (Restart from stage) feature in the jenkins declarative pipeline.
+    - Example: If the (Deploy) stage fails, restart the pipeline from that stage without re-executing previous stages.
+
+
+             TESTING AND QUALITY ASSURANCE
+27- How do you intergrate jenkins with Sonarqube for code quality analysis?
+    - Use the SonarQube Scanner plugin.
+    - Example: Add a stage in the pipeline to run (sonar-scanner) and publish results to the SonarQube server.
+28- How do you enforce code coverage thresholds in jenkins pipelines?
+    - Use tools like (JaCoCo or Cobertura) and configure the build to fail if thresholds are not met.
+    - Example
+
+              jacoco(execPattern: '**/jacoco.exec',minimumBranchCoverage: '80')
+
+
+             PARALLELISM AND OPTIMIZATION
