@@ -137,3 +137,54 @@
 
 
              PARALLELISM AND OPTIMIZATION
+29- How do you implement parallelism in jenkins pipelines?
+    - use the (parallel) directive in declarative pipeline or parallel block in scripted pipelines.
+    -  Example: Run (unit tests, intergration tests, and linting in parallel stages.
+30- How do you optimize resource utilization in jenkins?
+    -  Use (lock) to manage resource contention.
+    - Example: Limit concurrent jobs accessing a shared environment using 
+            lock('resourceName').
+
+               CONTAINERIZED BUILDS
+31- How do you run jenkins job in a Docker container?
+    - Use the (docker) block in declarative pipelines.
+    - Example:
+              agent{
+               docker{image 'node:14'}
+              }
+32- How do you ensure consistent environments for jenkins builds?
+    - use docker images to define build environments.
+    - Example: use a prebuild image with all dependencies pre-installed for faster builds.
+
+
+              INTERGRATION WITH CLOUD PLATFORMS
+33- How do you integrate jenkins with AWS for CI/CD?
+    - Use the AWS CLI or AWS-specific jenkins plugins.
+    -Example: Deploy an application to s3 using (aws s3 cp) commands in the pipeline.
+34- How do you configure jenkins to deploy to Azure k8s service (AKS)?
+    - Use (kubectl) commands with AKS credentials stored in jenkins credentials.
+    - Example: 
+               Deploy manifests using (sh 'kubectl apply -f k8s.yaml'.
+
+
+             JOB AND PIPELINE TRIGGERING
+35- how do you trigger a jenkins job when a file changes in Git?
+     - Use GitHub or Bitbucket webhooks configured with the jenkins job.
+     - Example:
+               A webhook triggers the job only for changes in a specific folder by setting path filters.
+36- How do you schedule periodic builds in jenkins?
+     - Use the (Build periodically) option or (cron) syntax in pipeline scripts.
+     - Example:
+                schedule a nighty build using HO***
+
+
+               AUDIT AND COMPLIANCE
+37- How do you audit build logs and job execution in Jenkins?
+    - Enable the Audit Trial plugin to track user actions.
+    - Example: View changes made to jobs, buids, and plugins.
+38- How do you implementcompliance checks in jenkins pipelines?
+    - Integrate with tools like OpenSCAP or custom scripts for compliance validation.
+    - Example:Validate infrastructure as codeIaC templates for compliance before deployment.
+
+
+               BUILD ARTIFACTS AND RELEASES
