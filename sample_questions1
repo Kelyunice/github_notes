@@ -77,3 +77,33 @@
 
 
           MONITORING AND REPORTING
+17- How do you monitor jenkins build trends?
+    - use the build history and build monitor plugins.
+    - Example: Visualize pass/fail trends over time to identify flaky tests.
+18- How do you notify teams about build failures?
+    - Use the Email extension or Slack Notification plugins.
+    - Example: Configure a Slack webhook to notify the (#build-alerts) channel upon failure
+
+
+                VERSIONS CONTROL SYSTEM INTERGRATION
+19- How do you manage monrepos in jenkins pipelines?
+    - Use Spare chekouts to fetch only the required directories.
+    - Example: Trigger pipelines based on changes in specific subdirectories using the (dir) parapeter in Git.
+20- How do you handle merge conflicts ina a jenkins pipeline?
+    - use (Git pre-merge hooks) or resolve conflicts locally and push the updated code.
+    - Example: A pipeline can fetch both source and target branches, merge them in a temporary brannch, and check for conflicts.
+
+
+              ADVANCED PIPELINE DESIGN
+21- How do you trigger a jenkins pipeline from another pipeline?
+    - use the (build ) step in a declarative or scripted pipeline to trigger another pipeline.
+    - Example: Pipeline A builds the application, and pipeline B deploys it. Pipeline A calls pipeline B using 
+         (build(job: 'Pipeline-B',parameters: (string(name: 'version',value: '1.0'))).
+22- How do you handle shared libraries in jenkins pipelines?
+    - Use the ( Global Shared Libraries) feature in jenkins.
+    - Example: Create reusable Groovy functions for common tasks (e.g linting, packaging) and call them in pipeline using ( @Library('my-library').
+23- How do you implement conditional ogic in jenkins pipelines?
+    - Use (When) in declarative pipelines or (if) statements in scripted pipelines.
+    - Example: Skip deployment if the branch is not (main) using (when){branch 'main'}.
+
+            ERROR HANDLING AND RECOVERY
