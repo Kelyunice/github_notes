@@ -4,7 +4,7 @@
 
  There are different types of container registries
  
-  - dickerhub
+  - dockerhub
   - Elastic container registry (ECR)
   - Google container registries
 
@@ -48,7 +48,7 @@ A container is the running instance of an image ( App code + dependencies)
   
       # Add Docker's official GPG key
 
-      back to browser  ===> cp step 2 ( To install the lates version, run)
+      back to browser  ===> cp step 2 ( To install the latest version, run)
                        ===> add -y to auto approve
 
 
@@ -83,6 +83,20 @@ A container is the running instance of an image ( App code + dependencies)
 
   * host        : has physical filesystem
   * container   : has virtual filesystem
- 
+
+
+                                     DOCKER COMMANDS
+
+
+1- docker ps -a                        ===> to check process that are running
+2- docker pull                         ===> used in Docker to download an image from a Docker registry, such as Docker Hub, to your local machine.
+3- docker run                          ===> is used to create and start a new container from a specified image.
+4- docker push                         ===> Docker is used to upload (or "push") an image from your local Docker environment to a Docker registry, such as DOCKERHUB
+5- docker start                        ===> to start a container
+6- docker stop                         ===> to stop a container
+7- docker images                       ===> to see all contaianers that are running/in the system
+8- docker rmi id                       ===> used to remove one or more Docker images.
+9- docker rm                           ===> used to remove one or more Docker container from the sytem.
+10- docker logs                        ===> To check the logs
 
   
