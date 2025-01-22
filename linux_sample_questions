@@ -25,170 +25,105 @@
 12. List 3 different methods of adding user?
                    Search online
 13- What is the command to change file/directory ownership and group?
- 
- 
-
- 
- 
- 
- 
-chown and chgrp 
-List any 3 type of filesystem? 
-ext4,NTFS and FAT 
-When you login you get a message on the screen.  What is the name of that file and where is it located? 
-/etc/motd 
-16. 
-What is /bin directory used for? 
-Search online 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
-What are the different types of DNS Server 
-Master and secondary 
-How to change a user password? 
-passwd username 
-What is the version of Redhat Linux you have experience with? 
-7.4 
-List any 4 linux distributions? 
-Redhat, CentOS, Ubuntu and SUSE 
-How to logoff from the system? 
-exit 
-Give any 3 examples of operating systems? 
-Windows, Linux and MAC 
-How to create a directory? 
-mkdir 
-Where are the zone files located for DNS service? 
-/var/named/zonefiles 
-How to check kernel version? 
-uname –a 
-Which directory has all the configuration files? 
-/etc 
-How to become root user from a regular user? 
-su – 
-How many mega bytes in 1 giga bytes? 
-Search online 
-What is the purpose of having different network ports? 
-So the communication of each application goes through a dedicated port 
-How to display first column of a file? 
-cat filename | awk ‘{print $1}’ 
-What is the name of DNS rpm package? 
-bind 
-What is the difference between nslookup and dig commands? 
-Search online 
-33. 
-How to check your user id and group id? 
-34. 
-id 
-How to check a file’s permission? 
-ls –l  
-35. 
-36. 
-37. 
-38. 
-39. 
-40. 
-41. 
-42. 
-43. 
-44. 
-45. 
-46. 
-47. 
-48. 
-49. 
-What is the difference between “kill” and “kill -9” command? 
-Search online 
-What is subnet? 
-Search online 
-You are troubleshooting an issue with Redhat support and they have asked you to send the contents of /etc 
-directory.  How and which method you will use to transfer the contents? 
-tar (compress) the entire /etc directory and ftp 
-What is root home directory? 
-/root 
-What is rsyslogd deamon and its purpose? 
-Search online 
-Your company has terminated a server administrator. What is first thing as an administrator you should do to 
-enhance the security? 
-Change root password 
-How to check the computer name or host name in Linux? 
-hostname 
-Which permission allows a user to run an executable with the permissions of the owner of that file? 
-First 3 bits should have x 
-What is the command to untar a tarred file? 
-untar 
-What is /proc directory used for? 
-Search online 
-What is the purpose of nsswitch.conf file 
-It tells the system where to go to resolve hostnames 
-List 3 basic commands to navigate the filesystem? 
-cd, pwd and ls 
-Which service/daemon should be running on the server that allows you to connect remotely? 
-sshd 
-What is the purpose of firewall? 
-Search online 
-List any 3 IT components? 
-Hardware, OS and Applications 
-50. 
-Which directory has all the commands we use, e.g. ls, cd etc.? 
-51. 
-/usr/bin or /bin 
-What is the difference between memory, virtual memory and cache? 
-Search online 
-52. 
-Which of the following is correct? 
-245. 
-246. 
-247. 
-Hardware  → Operating System  → Users 
-Operating System → Users → Hardware 
-Database  → Hardware  → Users 
+                        chown and chgrp 
+14- List any 3 type of filesystem? 
+                     ext4,NTFS and FAT 
+15- When you login you get a message on the screen.  What is the name of that file and where is it located? 
+                                 /etc/motd 
+16- What is /bin directory used for?
+                        earch online 
+17- What are the different types of DNS Server 
+                        Master and secondary
+18- How to change a user password?
+                         passwd username                  
+19- What is the version of Redhat Linux you have experience with? 
+                             7.4 
+20- List any 4 linux distributions? 
+                    Redhat, CentOS, Ubuntu and SUSE 
+21- How to logoff from the system? 
+                      exit 
+22- Give any 3 examples of operating systems? 
+                      Windows, Linux and MAC 
+23- How to create a directory? 
+                          mkdir 
+24- Where are the zone files located for DNS service? 
+                     /var/named/zonefiles 
+25- How to check kernel version? 
+                   uname –a 
+26- Which directory has all the configuration files? 
+                            /etc 
+27- How to become root user from a regular user? 
+                           su – 
+28- How many mega bytes in 1 giga bytes? 
+                 search online 
+29- What is the purpose of having different network ports? 
+                So the communication of each application goes through a dedicated port 
+30- How to display first column of a file? 
+              cat filename | awk ‘{print $1}’ 
+31- What is the name of DNS rpm package? 
+                      bind 
+32- What is the difference between nslookup and dig commands? 
+                   Search online 
+33. How to check your user id and group id? 
+                      id 
+34- How to check a file’s permission? 
+                    ls –l  
+35- What is the difference between “kill” and “kill -9” command? 
+                  Search online 
+36- What is subnet? 
+                 Search online 
+37- You are troubleshooting an issue with Redhat support and they have asked you to send the contents of /etc directory.  How and which method you will use to transfer the contents? 
+                tar (compress) the entire /etc directory and ftp 
+38- what is root home directory? 
+                /root 
+39- What is rsyslogd deamon and its purpose? 
+                 Search online 
+40- Your company has terminated a server administrator. What is first thing as an administrator you should do to enhance the security? 
+                    Change root password 
+41- How to check the computer name or host name in Linux? 
+                    hostname 
+42- Which permission allows a user to run an executable with the permissions of the owner of that file? 
+                    First 3 bits should have x 
+43- What is the command to untar a tarred files?
+                      untar 
+44- What is /proc directory used for? 
+                    Search online 
+45- What is the purpose of nsswitch.conf file 
+                  It tells the system where to go to resolve hostnames 
+46- List 3 basic commands to navigate the filesystem? 
+                      cd, pwd and ls 
+47- Which service/daemon should be running on the server that allows you to connect remotely? 
+                   sshd 
+48- What is the purpose of firewall? 
+                Search online 
+49- List any 3 IT components? 
+             Hardware, OS and Applications 
+50- Which directory has all the commands we use, e.g. ls, cd etc.?  
+             /usr/bin or /bin 
+51- What is the difference between memory, virtual memory and cache? 
+            Search online 
+52- Which of the following is correct? 
+                Hardware  → Operating System  → Users 
+                Operating System → Users → Hardware 
+                Database  → Hardware  → Users 
 53. Which of the following is a communication command? 
-o grep 
-o mail 
-o touch 
-o cd 
-54. 
-55. 
-56. 
-57. 
-58. 
-59. 
-60. 
-61. 
-62. 
-63. 
-64. 
-65. 
-How to rename a file or directory? 
-mv 
-How to change a hostname in Linux? 
-Search online 
-How to check network interfaces in Linux? 
-ifconfig 
-Why is “tail –f logfilename” command used most often and what does it do? 
-It will output all incoming logs in real time 
-What type of hardware have you worked on? 
-You should get yourself familiar with Dell, HP and UCS hardware by going online and check the 
-vendor websites 
-How to sort a file in reverse order? 
-cat filename | sort –r 
-What is the name of operating system that runs Unix? 
-Solaris, HP-UX etc. 
-List all byte sizes from smallest to largest? 
-Search online 
+              grep , mail , touch , cd 
+54. How to rename a file or directory? 
+                mv 
+55- How to change a hostname in Linux? 
+           S  earch online 
+56- How to check network interfaces in Linux? 
+               ifconfig 
+57- Why is “tail –f logfilename” command used most often and what does it do? 
+            It will output all incoming logs in real time 
+58- What type of hardware have you worked on? 
+          You should get yourself familiar with Dell, HP and UCS hardware by going online and check the vendor websites 
+59- How to sort a file in reverse order? 
+            cat filename | sort –r 
+60- What is the name of operating system that runs Unix? 
+             Solaris, HP-UX etc. 
+61- List all byte sizes from smallest to largest? 
+             Search online 
 How to check the total number of partition in Linux? 
 fdisk -l 
 How to access a linux system from a linux system? 
@@ -201,21 +136,7 @@ cat filename | awk ‘{print $5}’ | cut –c1-3
 What is /etc/hosts file used for? 
 To resolve hostnames with IP address 
 67. 
-68. 
-69. 
-70. 
-71. 
-72. 
-73. 
-74. 
-75. 
-76. 
-77. 
-78. 
-79. 
-80. 
-81. 
-82. 
+. 
 List any 3 options of ‘df’ command and what they are used for? 
 Search online 
 What is the command to change file/directory permissions? 
@@ -256,19 +177,7 @@ Check your system time
 Check your crontab entry 
 Check /var/log/messages 
 84. 
-85. 
-86. 
-87. 
-88. 
-89. 
-90. 
-91. 
-92. 
-93. 
-94. 
-95. 
-96. 
-97. 
+ 
 How to check system hardware information? 
 dmidecode 
 How to check network interface MAC address? 
@@ -361,20 +270,7 @@ top and uptime command
 How to schedule jobs? 
 crontab and at 
 116. 
-117. 
-118. 
-119. 
-120. 
-121. 
-122. 
-123. 
-124. 
-125. 
-126. 
-127. 
-128. 
-129. 
-130. 
+ 
 131. 
 What is the 3rd field when setting up crontab? 
 Day of the month 
@@ -415,19 +311,7 @@ Login through system console
 Ping the system 
 Reboot or boot if possible 
 133. 
-134. 
-135. 
-136. 
-137. 
-138. 
-139. 
-140. 
-141. 
-142. 
-143. 
-144. 
-145. 
-146. 
+ 
 147. 
 What is difference between static and DHCP IP? 
 Search online 
@@ -468,19 +352,7 @@ c) Kernel
 d) Applications 
 148. 
 149. 
-150. 
-151. 
-152. 
-153. 
-154. 
-155. 
-156. 
-157. 
-158. 
-159. 
-160. 
-161. 
-162. 
+. 
 How to save and quit from vi editor? 
 Shift ZZ or :wq! 
 What is the difference between a process and daemon? 
@@ -520,20 +392,7 @@ To create a new filesystem
 If you create a new group, which file does it get created in? 
 /etc/group 
 165. 
-166. 
-167. 
-168. 
-169. 
-170. 
-171. 
-172. 
-173. 
-174. 
-175. 
-176. 
-177. 
-178. 
-179. 
+ 
 Which file has DNS server information (e.g. DNS resolution)? 
 /etc/resolv.conf 
 What are the commands you would run if you need to find out the version and build date of a package (e.g. 
@@ -577,16 +436,7 @@ yum install update
 184. 
 185. 
 186. 
-187. 
-188. 
-189. 
-190. 
-191. 
-192. 
-193. 
-194. 
-195. 
-196. 
+ 
 197. 
 How to tell which shell you are in or running? 
 $0 
@@ -625,14 +475,7 @@ crontab –l
 198. 
 How to check system memory and CPU usage? 
 free and top 
-199. 
-200. 
-201. 
-202. 
-203. 
-204. 
-205. 
-206. 
+199.  
 207. 
 Which utility could you use to repair the corrupted file system? 
 fsck 
@@ -729,14 +572,7 @@ CPU, RAM, STORAGE HDD SSD M.2, PSU power supply unit, motherboard, and cooling s
 (heatsink and fans)  
 222.  
 223. 
-224. 
-225.  
-226. 
-227.  
-228.  
-229.  
-230. 
-231. 
+. 
 What is the difference between ILO and IDRAC?  
 ilo: Integrated Lights-Out is hp and idrac: Integrated Dell Remote Access Controller is dell  
 What’s the command to check the user’s default shell?   
